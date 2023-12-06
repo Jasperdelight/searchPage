@@ -1,13 +1,12 @@
 <template>
-  <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-    <div class="home-card p-5 card align-items-center shadow rounded elevation-3">
-      <img src="https://bcw.blob.core.windows.net/public/img/8600856373152463" alt="CodeWorks Logo"
-        class="rounded-circle">
-      <h1 class="my-5 bg-dark text-white p-3 rounded text-center">
-        Vue 3 Starter
-      </h1>
+  <section class="container-fluid background-image" style="height: 100vh;">
+    <div class="row">
+      <div class="col-12 text-center">Hello</div>
+      <div class="col-6">List
+        <div class="col-12"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -39,5 +38,11 @@ export default {
       object-position: center;
     }
   }
+}
+.background-image{
+  background-image: url(https://images.unsplash.com/photo-1682687982204-f1a77dcc3067?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+  object-fit: cover;
+  object-position: center;
+
 }
 </style>
