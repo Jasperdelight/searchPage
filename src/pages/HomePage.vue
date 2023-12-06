@@ -2,18 +2,36 @@
   <section class="container-fluid background-image" style="height: 100vh;">
     <div class="row">
       <div class="col-12 text-center">Hello</div>
+      <!-- Text Area -->
       <div class="col-6">List
         <div class="col-12"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+      </div>
+      <!-- List -->
+      <div class="col-6">
+        <div class="col-12">
+          <form action="" @submit.prevent="createToDo()">
+                <div>
+                  <label for="ToDo">Todo</label>
+                  <input type="text" id="description" minlength="3" maxlength="30" required name="description">
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import { logger } from "../utils/Logger";
+
 export default {
   setup() {
     return {
-      
+       createToDo() {
+        
+        logger.log('button pressed')  
+      },
     }
   }
 }
