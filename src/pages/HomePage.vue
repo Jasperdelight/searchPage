@@ -30,7 +30,8 @@ export default {
     return {
        createToDo() {
         
-        logger.log('button pressed')  
+        logger.log('button pressed')
+        
       },
     }
   }
